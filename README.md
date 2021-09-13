@@ -6,7 +6,7 @@ A Small Arduino Project to measure distance that returns values ​​in centime
 
 ## ⚙️ Circuito
 
-![Circuito Ilustrativo](https://github.com/Brunoazzireluto/distance_sensor/blob/master/Distance_sensor.pngraw=true)
+![Circuito Ilustrativo](https://github.com/Brunoazzireluto/distance_sensor/blob/master/Distance_sensor.png?raw=true)
 
 
 ## 🛠️ Construído com
