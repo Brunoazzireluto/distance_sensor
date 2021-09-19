@@ -20,10 +20,19 @@ void loop() {
   float cmMsec, inMsec;
   long microsec = ultrasonic.timing();
   cmMsec = ultrasonic.convert(microsec, Ultrasonic::CM);
-  inMsec = ultrasonic.convert(microsec, Ultrasonic::IN);
-  Serial.print("Distancia em cm: ");
-  Serial.print(cmMsec);
-  Serial.print("Distancia em Polegadas: ");
-  Serial.print(inMsec);
-  delay(1000);
+  if(cmMsec >= 100)
+  {
+    float mMsec = cmMsec /100;
+    Serial.print(" Distancia em M: ");
+    Serial.print(mMsec);
+    Serial.println();
+    delay(3000);
+  }
+  else {
+    Serial.print(" Distancia em cm: ");
+    Serial.print(cmMsec);
+    Serial.println();
+    delay(3000);
+  }
+
 }
